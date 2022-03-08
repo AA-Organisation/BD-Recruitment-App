@@ -2,12 +2,9 @@ package com.asheckhove.privacy.controller;
 
 import com.asheckhove.privacy.model.User;
 import com.asheckhove.privacy.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.net.URI;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -18,6 +15,8 @@ import java.util.concurrent.ExecutionException;
  */
 
 @RestController
+@RequestMapping("/")
+@Tag(name = "Simple User management service")
 public class PrivacyController {
 
     @Autowired
@@ -48,22 +47,5 @@ public class PrivacyController {
         return userService.deleteUser(username);
     }
 
-
-
-
-//    @RequestMapping("/")
-//    public String getUsers(){
-//        return "{david, solomon, adam}";
-//    }
-
-//    @PostMapping(value = "/postuser",
-//            consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
-//            produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
-//
-//    )
-//    public ResponseEntity<User> postUser(@RequestBody User user){
-//        return ResponseEntity.created(URI
-//                        .create(String.format("/persons/")))
-//                .body(user);
-//    }
+    
 }

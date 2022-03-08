@@ -47,7 +47,6 @@ public class UserService {
     public List<User> getAllUsers() throws InterruptedException, ExecutionException {
         List<User> fbUsers = new ArrayList<>();
         Firestore dbFirestore = FirestoreClient.getFirestore();
-//        CollectionReference documentReference = dbFirestore.collection(COL_NAME);
         ApiFuture<QuerySnapshot> future = dbFirestore.collection(COL_NAME).get();
         List<QueryDocumentSnapshot> documents = future.get().getDocuments();
         for (QueryDocumentSnapshot document : documents) {
