@@ -17,7 +17,7 @@ import java.util.Objects;
 public class CandidateappApplication {
 
 	public static void main(String[] args) throws IOException {
-		ClassLoader classLoader = CandidateappApplication.class.getClassLoader();
+		/*ClassLoader classLoader = CandidateappApplication.class.getClassLoader();
 
 		File file = new File(Objects.requireNonNull(classLoader.getResource("serviceAccountKey.json")).getFile());
 		FileInputStream serviceAccount = new FileInputStream(file.getAbsoluteFile());
@@ -26,7 +26,7 @@ public class CandidateappApplication {
 				.setCredentials(GoogleCredentials.fromStream(serviceAccount))
 				.build();
 
-		FirebaseApp.initializeApp(options);
+		FirebaseApp.initializeApp(options);*/
 
 
 		SpringApplication.run(CandidateappApplication.class, args);
