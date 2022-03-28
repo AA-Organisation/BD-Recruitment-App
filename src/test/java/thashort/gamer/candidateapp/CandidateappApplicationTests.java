@@ -1,10 +1,10 @@
-package com.asheckhove.privacy;
+package thashort.gamer.candidateapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PrivacyApplicationTests {
+class CandidateappApplicationTests {
 
 	@Test
 	void contextLoads() {

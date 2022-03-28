@@ -1,13 +1,13 @@
-package com.asheckhove.privacy;
+package thashort.gamer.candidateapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PrivacyApplication {
+public class CandidateappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PrivacyApplication.class, args);
+		SpringApplication.run(CandidateappApplication.class, args);
 	}
 
 }
