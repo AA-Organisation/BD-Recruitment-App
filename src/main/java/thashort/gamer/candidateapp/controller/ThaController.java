@@ -9,6 +9,7 @@ import thashort.gamer.candidateapp.service.CandidateService;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping(path = "/candidates")
 public class ThaController {
